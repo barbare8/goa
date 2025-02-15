@@ -2,7 +2,6 @@ from turtle import*
 color("pink")
 width(4)
 shape("turtle")
-speed(9)
 forward(200)
 left(90)
 forward(200)
