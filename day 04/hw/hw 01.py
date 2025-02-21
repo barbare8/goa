@@ -1,0 +1,16 @@
+# შექმენით 3 ცვლადი და თითო განაახლე 5 ჯერ შემდეგ შედეგი გამოიტანე print-ით
+Name="barbare"
+surname="tsivilashvili"
+skool="goa"
+name="barbare"
+surname="tsivilashvili"
+skool="goa"
+name="barbare"
+surname="tsivilashvili"
+name="barbare"
+surname="tsivilashvili"
+skool="goa"
+name="barbare"
+surname="tsivilashvili"
+skool="goa"
+print(name, surname, skool)
