@@ -3,13 +3,13 @@ snake-case
 case-sansitive
 # case-sensitiv არის აქლემი მასში მეორესიტყვას დიდი ასოთი ვწერთ
 # მაგალითები
-goa_ is_ the_ best
-group_ 62_ is_ the_ best
-batoni_ andria_ kobaxiize_ is_ the_ best
+goa_is_the_best
+group_62_is_the_best
+batoni_andria_kobaxiize_is_the_best
 barbareTSIVILASHVIILI
 anaPUTURIZE
 gabrielMAXUASHVILI
-)
+
 Name = 'nika',აქ შეცდომა არის ის რომ ნეიმი პრინტში პატარა ასოთი წერია
 print(name)
 2)

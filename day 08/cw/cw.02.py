@@ -3,9 +3,4 @@
 # print(type(misis lika is the best))
 # print(type(goa is the best))
 # print(type(my cosune is the best))
-# print(type(evrione is the best))
-
-x = 9
-y = 3
-
-print(x / y)
+# print(type(evrione is the best)
