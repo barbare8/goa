@@ -1,11 +1,5 @@
-#  2) შექმენით 5 ცვლადი და შეინახეთ სხვადასხვა მონაცემთა ტიპები. შემდეგ კი შეამოწმეთ თითოეული ცვლადი რომელ მონაცემთა ტიპს ინახავს და გამოიტანეთ შედეგი ეკრანზე.
-name1="group_62_is_the_best"
-name2="misis lika is the best "
-name3="goa is the best"
-name4="my cosun is the best"
-name5="eevrione is the best"
-print(type(name1))
-print(type(name2))
-print(type(name3))
-print(type(name4))
-print(type(name5))
+#  3) კომენტარის სახით ჩამოწერეთ ყველა ნასწავლი მონაცემთა ტიპი და თითოეულს გვერდზე მიუწერეთ მაგალითი.
+# integer mag: 62
+# string mag:"gruop"
+# float mag: 5.3
+# bool mag:i am 9 years old true
