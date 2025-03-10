@@ -8,7 +8,7 @@ print(Name)
 age = 13
 print(age)
 3)
-Hello_world = "Hello"
+hello_world = "Hello"
 print(hello_world)
 4)
 name2 = 'nika'
