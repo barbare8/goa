@@ -1,5 +1,11 @@
-#  3) კომენტარის სახით ჩამოწერეთ ყველა ნასწავლი მონაცემთა ტიპი და თითოეულს გვერდზე მიუწერეთ მაგალითი.
-# integer mag: 62
-# string mag:"gruop"
-# float mag: 5.3
-# bool mag:i am 9 years old true
+#  2) შექმენით 5 ცვლადი და შეინახეთ სხვადასხვა მონაცემთა ტიპები. შემდეგ კი შეამოწმეთ თითოეული ცვლადი რომელ მონაცემთა ტიპს ინახავს და გამოიტანეთ შედეგი ეკრანზე.
+name = "barbare"
+age = 9
+heigth = 1.40
+i_have_a_little_sis = True
+i_dont_have_a_phone = False
+print(type(name))
+print(type(age))
+print(type(heigth))
+print(type(i_have_a_little_sis))
+print(type(i_dont_have_a_phone))
