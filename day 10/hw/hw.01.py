@@ -39,6 +39,3 @@
 # print(False)
 # 30 != 30
 # print(False)
-soil_moisture = 80
-soil_moisture = 120
-print(soil_moisture < 100)
