@@ -1,0 +1,16 @@
+this._s=this._s||{};(function(_){var window=this;
+try{
+_.jf(_.RZa);
+}catch(e){_._DumpException(e)}
+try{
+_.r("j9Yuyc");
+var vqn=function(a,b){if(a&&typeof a==="object"&&typeof a.code==="number"){switch(a.code){case 1:var c="permission_denied";break;case 2:c="location_unavailable";break;case 3:c="location_timeout";break;default:c="unknown_error"}a=new _.oe(c,a.message)}else a=new _.oe("unknown_error",`Geolocation API returned unexpected error: ${a}`);_.wh({serviceName:"g",methodName:b},a);return a},wqn=function(){const a=new _.oe("feature_not_enabled","HTML5 geolocation permissions API missing.");_.wh({serviceName:"g",
+methodName:"getGeolocationPermissionState"},a);return a},xqn=function(a){const b=new _.oe("feature_not_enabled","HTML5 geolocation API missing.");_.wh({serviceName:"g",methodName:a},b);return b},yqn=function(a){return _.A(function*(){var b=new _.nqn;switch(a.state){case "granted":return _.Bj(b,4,1),b;case "denied":return _.Bj(b,4,2),b;case "prompt":return _.Bj(b,4,3),b;default:return b=new _.oe("unknown_error",`Invalid permission state '${a.state}'.`),_.wh({serviceName:"g",methodName:"getGeolocationPermissionState"},
+b),Promise.reject(b)}})},zqn=function(a){return new Promise((b,c)=>{navigator.geolocation.getCurrentPosition(b,c,a)})};_.Lo(_.l7a,class extends _.Io{isAvailable(){return!(!navigator||!navigator.geolocation)}yya(){return!0}Aya(){let a,b;return!!((a=navigator)==null?0:(b=a.permissions)==null?0:b.query)}getCurrentLocation(){const a=this;return _.A(function*(){_.uh({serviceName:"g",methodName:"gcl"});if(!a.isAvailable())return Promise.reject(xqn("gcl"));try{return yield zqn({})}catch(b){return Promise.reject(vqn(b,"gcl"))}})}RLa(a,b){const c=this;return _.A(function*(){_.uh({serviceName:"g",methodName:"getCurrentLocationWithOptions"});
+if(!c.isAvailable()||!c.yya())return Promise.reject(xqn("getCurrentLocationWithOptions"));var d={};b&&(b.La()&&(d.timeout=_.Kka(b.Ca())),b.Da()&&(d.enableHighAccuracy=!!b.Aa()),b.Ja()&&(d.maximumAge=_.Kka(b.Ba())));try{const n=yield zqn(d);if(n.timestamp==null||n.coords==null)var e=null;else{var f=new _.mqn;var g=_.Rg(f,1,n.timestamp);var h=n.coords,k=_.xj(g,2,h.latitude);var m=_.xj(k,3,h.longitude);_.xj(m,4,h.accuracy);h.altitude!=null&&_.xj(g,5,h.altitude);h.altitudeAccuracy!=null&&_.xj(g,6,h.altitudeAccuracy);
+h.speed!=null&&g.setSpeed(h.speed);h.heading!=null&&_.xj(g,7,h.heading);e=g}if(e)return e;const q=new _.oe("unknown_error","Could not get geolocation information");_.wh({serviceName:"g",methodName:"getCurrentLocationWithOptions"},q);return Promise.reject(q)}catch(n){return n instanceof _.oe?Promise.reject(n):Promise.reject(vqn(n,"getCurrentLocationWithOptions"))}})}q6a(){const a=this;return _.A(function*(){_.uh({serviceName:"g",methodName:"getGeolocationPermissionState"});if(!a.isAvailable()||!a.Aya())return Promise.reject(wqn());
+try{var b=yield navigator.permissions.query({name:"geolocation"});return yqn(b)}catch(d){if(d instanceof TypeError)b=Promise.reject(wqn());else{b=Promise;var c=b.reject;const e=new _.oe("unknown_error",(d==null?void 0:d.message)||"Could not get geolocation permission information.");_.wh({serviceName:"g",methodName:"getGeolocationPermissionState"},e);b=c.call(b,e)}return b}})}});
+_.u();
+}catch(e){_._DumpException(e)}
+})(this._s);
+// Google Inc.
