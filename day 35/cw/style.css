@@ -1,0 +1,12 @@
+p{
+  text-decoration: overline dashed red  
+}
+
+p{
+    text-decoration: underline wavy purple
+}
+
+p{lorem: 100
+   text-align justify;
+   text-decoration: line-through dashed blue
+}
