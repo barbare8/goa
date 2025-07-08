@@ -1,0 +1,23 @@
+input{
+    border:1px solid lightcoral;
+    width: 300px;
+    background: none;
+    height:30px;
+}
+input::placeholder{
+    color:white;
+}
+#comment{
+    height:100px;
+}
+button{
+    background-color: lightcoral;
+    color:white;
+    text-transform: uppercase;
+    width: 300px;
+    border: none;
+    height:30px;
+}
+body{
+    background-color: rgb(52, 45, 52);
+}

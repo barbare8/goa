@@ -13,9 +13,10 @@ label {
     font-size: 14px;
 }
 input {
-    border: 1px solid gray;
+    border: none;
     outline: 1px;
     background: none;
+    border-bottom: 1px solid gray;
     width: 200px;
     height: 20px;
 }
@@ -27,7 +28,7 @@ button {
     width: 165px;
     height: 25px;
     cursor: pointer;
-    background-color:green;
+    background-color: rgb(137, 185, 226);
     transition: 0.3s;
     color: white;
     border-radius: 3px;
@@ -35,7 +36,7 @@ button {
 button:hover {
     width: 175px;
     height: 35px;
-    background-color: green;
+    background-color: rgb(163, 206, 243);
 }
 img {
     width: 300px;
@@ -43,8 +44,5 @@ img {
     border-radius: 50%;
 }
 h1{
-   color:black;
-}
-legend{
-    text-align: center;
+   color:aqua;
 }
