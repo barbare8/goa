@@ -1,5 +1,5 @@
-def reverse_seq(n):
+def reverse_words(s):
     numbers = []
-    for i in range(1,n+1):
+    for i in range(1,s+1):
         numbers.append(i)
     return numbers[::-1]
