@@ -3,5 +3,5 @@ if user == 2:
     names = ["barbare","ana","aleqsandre","mariami","elene"]
 num = int(input("enter one number"))
 print(num)
-    else :
+else :
     print("გრამი ერორი")

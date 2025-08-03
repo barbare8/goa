@@ -1,0 +1,7 @@
+body{
+  height: 100vh;
+    background-image: url(cat.jfif);
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;  
+}

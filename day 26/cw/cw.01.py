@@ -3,5 +3,5 @@ if user >= 7:
     print("Number is = 7")
 elif user == 3:
     print("Number is = 3")
-    else:
+else:
         print("number is = 3")
