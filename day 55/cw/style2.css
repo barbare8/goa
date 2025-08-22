@@ -1,0 +1,7 @@
+p{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    width: 1000px;
+    height:1000px;
+}
