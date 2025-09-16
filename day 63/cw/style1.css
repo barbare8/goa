@@ -1,0 +1,21 @@
+h1{
+    font-size: 100px;
+    position: relative;
+    animation-name: box;
+    animation-duration:5s ;
+    animation-iteration-count: infinite;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+@keyframes box{
+    50%{
+        bottom:150px;
+    }
+    100%{
+        top:150px;
+    }
+}

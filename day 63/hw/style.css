@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    width:100%;
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.now{
+   display: flex; 
+   gap:40px;
+   align-items:  center;
+   justify-content: center;
+}
+.now ul{
+    display: flex;
+    gap:15px;
+    list-style-type: none;
+}
+.logos{
+    width:100px;
+    
+}
+.text h1{
+font-weight: 700;
+font-size: 60px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.text p{
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.text button{
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color:white;
+width:129px;
+height:36px;
+background-color: black;
+border:none;
+border-radius: 100px;
+cursor: pointer;
+}
+main{
+    width:100%;
+    background-color:#f0efeb ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+@keyframes animation{
+    25%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.image img{
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
