@@ -1,0 +1,1 @@
+from codewarsbarbare.core import *
