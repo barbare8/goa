@@ -1,8 +1,9 @@
 // 2)გააკეტეთ თამაში "გამოიცანი რიცხვი", რენდომულ რიცხვი შინახეთ ცვლადში, შემდეგ მომხარებელს შემოატანინეთ რიცხვი, და შეამოწმეთ გამოიცანა თუ არა, მიეცით 3 ცდა და შემდეგ გამოიტანეთ you lose, while loop დაგჭირდებათ
-let number = 
-let user prompt(){
-    console.log(Math.floor(Math.random() * 10)+1)
+let number = Number(prompt())
+let number1 = 10
+if(number == number1){
+console.log("you cwest")
 }
-while(){
-     
+else{
+    console.log("you didn't cwest")
 }
