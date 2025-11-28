@@ -1,0 +1,83 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+#child2{
+    width:200px;
+    height:200px;
+    background-color: red;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#child3{
+   width:200px;
+    height:200px;
+    background-color: red;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+body{
+        background-image: url(bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 130%;
+        height: 100vh;
+        overflow: hidden;
+        display:flex;
+        flex-direction: column;
+        align-items: center; 
+        gap:50px;
+        
+}
+#black{
+    width: 100%;
+    height:100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    z-index: -10;
+}
+#parent{
+    color:red;
+    display:flex;
+    justify-content: center;
+    gap:70px;
+    flex-direction: column;
+    text-align: center;
+}
+h2{
+    font-weight: 900;
+}
+#parent2{
+    display:flex;
+    gap:20px;
+    color:red;
+
+}
+#parents_div{
+    display:flex;
+    gap:70px;
+}
+.circle{
+    width:50px;
+    height:50px;
+    background-color: white;
+    border-radius:50%;
+}
+.circle1{
+    width:50px;
+    height:50px;
+    background-color: white;
+    border-radius:50%;
+}
+#child7{
+    color:red;
+    width:30px;
+    height:30px;
+    border-radius:15px;
+}

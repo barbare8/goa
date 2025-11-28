@@ -1,0 +1,33 @@
+#box{
+    width:250px;
+    height:250px;
+    background-color: lawngreen;
+}
+body {
+  background: #A0FC69;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  background: #111;
+  color: #0f0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background: #c7ffc7;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+*  {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family:sans-serif ;
+    background:radial-gradient(cirkle at top,#4f46e5,#0f172a 55%,#020617 100%)
+    color: #e5e7eb;
+}
+.parent{
+    background-color:#111b32;
+    height:300px;
+    width:550px;
+    border-radius:25px;
+    border:1px solidrgb(111 111 111);
+    padding:10px;
+}
+.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    display:fle;   
+}
