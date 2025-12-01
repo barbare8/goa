@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family%3DBungee%2BTint%26display%3Dswap');
 *{
     padding:0;
     margin:0;
@@ -31,6 +32,9 @@ body{
         flex-direction: column;
         align-items: center; 
         gap:50px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
         
 }
 #black{
@@ -46,9 +50,18 @@ body{
     color:red;
     display:flex;
     justify-content: center;
-    gap:70px;
+    gap:90px;
     flex-direction: column;
     text-align: center;
+}
+#child4,#child5{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+#child2,#child3{
+    display:flex;
+    gap:10px;
 }
 h2{
     font-weight: 900;
@@ -62,22 +75,29 @@ h2{
 #parents_div{
     display:flex;
     gap:70px;
+    
 }
-.circle{
-    width:50px;
-    height:50px;
-    background-color: white;
-    border-radius:50%;
-}
-.circle1{
+.circle,.circle2{
     width:50px;
     height:50px;
     background-color: white;
     border-radius:50%;
 }
 #child7{
-    color:red;
-    width:30px;
-    height:30px;
+    background-color:red;
     border-radius:15px;
+
+}
+.childtext{
+    text-align: center;
+}
+#child7{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:5px ;
+    padding-bottom: 5px;
+    border:none;
+    color:white;
+    font-weight:700;
+    cursor: pointer;
 }
