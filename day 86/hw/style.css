@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Zen Kaku Gothic New";
+    height:95vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bgtetete.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.divani{
+    font-size: 35px;;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    width:50px;
+    color:honeydew;
+}
+#year{
+    font-size: 35px;
+    display:flex;
+    flex-direction: row;
+    color:honeydew;
+}
