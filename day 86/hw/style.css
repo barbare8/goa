@@ -22,9 +22,10 @@ body{
     gap:20px;
     width:50px;
     color:honeydew;
+    align-items: center;
 }
 #year{
-    font-size: 35px;
+    font-size: 60px;
     display:flex;
     flex-direction: row;
     color:honeydew;
