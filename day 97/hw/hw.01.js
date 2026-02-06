@@ -148,7 +148,7 @@ for (let char of word) {
   console.log(char); // H e l l o
 }
 // "------------------------------------------------------------------------------------------"
-//  1Default Function Creating (ჩვეულებრივი ფუნქცია)
+//  1 Default Function Creating (ჩვეულებრივი ფუნქცია)
 function square1(x) {
   return x * x;
 }

@@ -1,6 +1,6 @@
 // 1) შექმენით ობიეტი მწერზე, მახასიათებლით + მეთოდებით
 let eant = {
-    eant_name:"cocroche"
+    eant_name:"cocroche",
     fly: function(){
         console.log("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz")
     eant.fly()
@@ -15,7 +15,7 @@ let eant = {
 "-------------------------------------------------------------------------------------------------------------------"
 // 2) შექმენით ობიექტი ფრინველზე, მახასიათებლით + მეთოდებით
 let bird = {
-    bird_name:"Seagull"
+    bird_name:"Seagull",
     fly: function(){
         console.log("flatttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt")
     bird.fly()
