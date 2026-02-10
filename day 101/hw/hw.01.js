@@ -1,4 +1,4 @@
-let names = ["ana", "gio", "mariam", "anamaria", "axtona", "nino"];
+let names = ["ana", "gio", "mariam", "anamaria", "barbare", "nino"];
 let result = [];
 
 for (let i = 0; i < names.length; i++) {
