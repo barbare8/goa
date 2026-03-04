@@ -3,5 +3,5 @@
 let letters = ['g', 'r', 'e', 'n', 'd', 'm', 'a'];
 let joinedWord = letters.reduce(function(acc, letter) {
   return acc + letter;
-}, "");
+});
 console.log(joinedWord);

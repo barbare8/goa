@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<title>Shopping Cart</title>
+
+<style>
+body{
+    background: linear-gradient(to right, #e6b980, #eacda3);
+    min-height:100vh;
+}
+
+.cart-wrapper{
+    margin-top:80px;
+}
+
+.card{
+    border-radius:12px;
+    border:none;
+}
+
+.table thead{
+    background:#f8f9fa;
+}
+
+.table td, .table th{
+    vertical-align:middle;
+}
+
+.total-section{
+    font-size:20px;
+    font-weight:600;
+    text-align:right;
+    padding-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container cart-wrapper">
+    <h3 class="text-center text-white mb-4">Bootstrap 4 Shopping Cart</h3>
+
+    <div class="card shadow p-4">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+
+                    <tr>
+                        <td>Ema Ujins Original</td>
+                        <td class="price" data-price="174">$174</td>
+                        <td>
+                            <input type="number" class="form-control qty" value="0" min="0" style="width:90px;">
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-danger remove">Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lamis Canvas Shoe</td>
+                        <td class="price" data-price="129">$129</td>
+                        <td>
+                            <input type="number" class="form-control qty" value="0" min="0" style="width:90px;">
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-danger remove">Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Sky Nike Running Shoe</td>
+                        <td class="price" data-price="179">$179</td>
+                        <td>
+                            <input type="number" class="form-control qty" value="0" min="0" style="width:90px;">
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-danger remove">Remove</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="total-section">
+            Total: $<span id="totalPrice">0</span>
+        </div>
+    </div>
+</div>
+
+<script>
+
+const totalPrice = document.getElementById("totalPrice");
+
+function updateTotal(){
+    let total = 0;
+
+    document.querySelectorAll("#cartBody tr").forEach(row=>{
+        const price = parseInt(row.querySelector(".price").dataset.price);
+        const qty = parseInt(row.querySelector(".qty").value);
+        total += price * qty;
+    });
+
+    totalPrice.innerText = total;
+}
+
+document.addEventListener("input", function(e){
+    if(e.target.classList.contains("qty")){
+        updateTotal();
+    }
+});
+
+document.addEventListener("click", function(e){
+    if(e.target.classList.contains("remove")){
+        e.target.closest("tr").remove();
+        updateTotal();
+    }
+});
+
+updateTotal();
+
+</script>
+
+</body>
+</html>
