@@ -1,8 +1,8 @@
 #  <!-- მომხმარებელს შემატანინე, ასაკი, გვარი, სახელი, დაბადების თარიღი
-age = input("hav old are you?")
+age = input("how old are you?")
 print(age)
-surname = input("wat is your surname?")
+surname = input("what is your surname?")
 print(surname)
-data_of_birth = input("wat is your data of birth?")
+data_of_birth = input("what is your data of birth?")
 print(data_of_birth)
-name = input("wat is your name?")
+name = input("what is your name?")
