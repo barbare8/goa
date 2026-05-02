@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Search</title>
+</head>
+<body>
+
+  <h2>Search Product</h2>
+
+  <input type="text" id="searchInput" placeholder="Enter title or ID">
+  <button id="searchBtn">Search</button>
+
+  <div id="result"></div>
+
+  <script>
+    const input = document.getElementById("searchInput");
+    const button = document.getElementById("searchBtn");
+    const resultDiv = document.getElementById("result");
+
+    button.addEventListener("click", async () => {
+      const query = input.value.toLowerCase().trim();
+
+      if (!query) {
+        resultDiv.innerHTML = "Please enter something";
+        return;
+      }
+
+      try {
+        const res = await fetch("https://api.escuelajs.co/api/v1/products/");
+        const products = await res.json();
+
+        let foundProducts = [];
+
+        // თუ user-მა ჩაწერა რიცხვი → ვეძებთ ID-ით
+        if (!isNaN(query)) {
+          foundProducts = products.filter(p => p.id == query);
+        } else {
+
+          foundProducts = products.filter(p =>
+            p.title.toLowerCase().includes(query)
+          );
+        }
+
+        if (foundProducts.length === 0) {
+          resultDiv.innerHTML = "No products found";
+          return;
+        }
+
+        resultDiv.innerHTML = foundProducts.map(p => `
+          <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+            <h3>${p.title}</h3>
+            <p><strong>ID:</strong> ${p.id}</p>
+            <p>${p.description}</p>
+            <img src="${p.images[0]}" width="150">
+          </div>
+        `).join("");
+
+      } catch (err) {
+        resultDiv.innerHTML = "Error fetching data";
+        console.error(err);
+      }
+    });
+  </script>
+
+</body>
+</html>

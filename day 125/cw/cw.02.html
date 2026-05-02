@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Product</title>
+</head>
+<body>
+
+
+<h2>Search Product</h2>
+
+<input type="text" id="searchInput" placeholder="Search product..." 
+<button onclick="searchProduct()">Search</button>
+
+<div id="result"></div>
+
+<script>
+async function searchProduct() {
+  const value = document.getElementById("searchInput").value.toLowerCase();
+  const resultDiv = document.getElementById("result");
+
+  const res = await fetch("https://api.escuelajs.co/api/v1/products");
+  const data = await res.json();
+
+  const products = data.filter(p =>
+    p.title.toLowerCase().includes(value)
+  );
+
+  if (products.length > 0) {
+    resultDiv.innerHTML = products.map(p => `
+      <h3>${p.title}</h3>
+    `).join("");
+  } else {
+    resultDiv.innerHTML = "Not found";
+  }
+}
+</script>
+
+</body>
+</html>

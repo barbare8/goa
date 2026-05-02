@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products Range</title>
+</head>
+<body>
+
+  <input type="number" id="id1" placeholder="ID 1">
+  <input type="number" id="id2" placeholder="ID 2">
+  <button id="btn">Submit</button>
+
+  <div id="result"></div>
+
+  <script>
+    let btn = document.getElementById("btn");
+    let result = document.getElementById("result");
+
+    btn.addEventListener("click", async function () {
+    let id1 = Number(document.getElementById("id1").value);
+    let id2 = Number(document.getElementById("id2").value);
+
+    let res = await fetch("https://api.escuelajs.co/api/v1/products/");
+    let data = await res.json();
+
+      let filtered = data.filter(function(p) {
+        return p.id > id1 && p.id < id2;
+      });
+
+      result.innerHTML = "";
+
+      filtered.forEach(function(p) {
+
+        let div = document.createElement("div");
+
+        let h3 = document.createElement("h3");
+        h3.textContent = p.title;
+
+        let pTag = document.createElement("p");
+        pTag.textContent = "ID: " + p.id;
+
+        div.appendChild(h3);
+        div.appendChild(pTag);
+
+        result.appendChild(div);
+
+      });
+    });
+  </script>
+
+</body>
+</html>
