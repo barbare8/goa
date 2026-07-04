@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(download\ \(16\).png)
+}
+#img1{
+    widtd:10;
+    height:10;
+}
